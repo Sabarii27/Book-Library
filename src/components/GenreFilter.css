@@ -1,0 +1,33 @@
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 34px;
+}
+
+.genre-btn {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 14px 24px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.genre-btn.active {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+
+@media (max-width: 768px) {
+  .genres {
+    gap: 8px;
+    margin: 16px 0 20px;
+  }
+  .genre-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

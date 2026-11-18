@@ -1,0 +1,46 @@
+.header {
+  background: var(--navy);
+  height: 105px;
+  padding: 0 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo span {
+  color: var(--amber);
+}
+
+.badge-btn {
+  background: var(--amber);
+  color: var(--navy);
+  border: none;
+  border-radius: 999px;
+  padding: 14px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 16px;
+    gap: 12px;
+  }
+  .logo {
+    font-size: 26px;
+  }
+  .badge-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}

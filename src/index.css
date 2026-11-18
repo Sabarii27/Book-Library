@@ -1,0 +1,28 @@
+:root {
+  --navy: #1e293b;
+  --amber: #f59e0b;
+  --amber-soft: #fef3c7;
+  --amber-text: #92400e;
+  --rust: #c2410c;
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --text: #1e293b;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+input {
+  font-family: inherit;
+}

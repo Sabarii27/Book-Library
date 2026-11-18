@@ -1,0 +1,114 @@
+.book-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.cover {
+  position: relative;
+  height: 255px;
+  padding: 0 28px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+/* the light "spine" strip on the left edge */
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 14px;
+  width: 6px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.cover h3 {
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.cover p {
+  margin: 6px 0 0;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+.info {
+  padding: 24px 24px 22px;
+}
+
+.genre-tag {
+  display: block;
+  color: var(--rust);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.info h4 {
+  margin: 8px 0 6px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  font-size: 21px;
+  color: var(--text);
+}
+
+.add-btn {
+  background: var(--amber-soft);
+  color: var(--amber-text);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .cover {
+    height: 180px;
+    padding: 0 20px 16px;
+  }
+  .cover h3 {
+    font-size: 24px;
+  }
+  .cover p {
+    font-size: 15px;
+  }
+  .info h4 {
+    font-size: 20px;
+  }
+  .meta,
+  .add-btn {
+    font-size: 15px;
+  }
+  .rating {
+    font-size: 17px;
+  }
+  .genre-tag {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,25 @@
+.layout {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 42px 118px 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 450px;
+  gap: 44px;
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    padding: 32px 40px;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 20px 16px 32px;
+    gap: 24px;
+  }
+}
