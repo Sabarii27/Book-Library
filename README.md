@@ -1,9 +1,9 @@
-# BookNook – Book Library (Phase 1: Static UI)
-
-React + Vite. Static UI only (JSX + CSS, hardcoded data via props).
+# Book Library – React Training 
 
 ## Run
 ```
 npm install
 npm run dev
 ```
+
+Copy `src/data.js`, `src/App.jsx`, `src/App.css` and `src/components/*` into your existing repo if you prefer to keep your own setup.
